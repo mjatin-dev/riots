@@ -16,7 +16,7 @@ import { Ranks } from "./entity/ranks.entity";
     ConfigModule.forRoot(),
     TypeOrmModule.forRoot({
       type: "postgres",
-      host: process.env.DB_HOST || "54.79.223.218",
+      host: process.env.DB_HOST || "localhost",
       port: parseInt(process.env.DB_PORT) || 5432,
       username: process.env.DB_USER || "",
       password: process.env.DB_PASSWORD || "",
